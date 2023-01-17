@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Netflix</title>
+    <style>
+        
+        @font-face {
+            font-family: 'netflixregular' ;
+            src: url('NetflixSans-Regular.otf') format('opentype');
+            }
+        @font-face {
+            font-family: 'netflixbold';
+            src: url('NetflixSans-Bold.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'netflixlight';
+            src: url('NetflixSans-Light.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'netflixmedium';
+            src: url('NetflixSans-Medium.otf') format('opentype');
+        }
+    </style>
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+   
+    <header>
+
+        <p id="Novo">NOVO!</p>
+
+        <p>
+            Planos a partir de 
+            <div id="fontevalor">R$ 18,90.</div> 
+            <a href="">
+                Saiba mais<span class="material-icons"id="seta">arrow_forward_ios</span>
+            </a> 
+        </p>
+
+    </header>
+
+    <main>
+
+        <img src="logonetflix.png" alt="">
+
+        <select name="Linguagem" id="">
+            <option value="" selected>Portugues</option>
+            <option value="">Ingles</option>
+        </select>
+
+        <a href="">Entrar</a>
+
+        <h1>Filmes,séries e muito mais.<br>Sem limites.</h1>
+            <p>Assista onde quiser. Cancele quando quiser.</p>
+            <p id="paragrafomain">Quer assitir?informe seu email para criar ou reniciar sua assinatura.</p>
+
+        <form action="cadastro.php" method="get">
+            <input type="email" name="email" id="iemail" required placeholder="Email">
+
+            <input type="submit" value="" id="vamosla">
+            <label for="vamosla">
+                <p>Vamos la <span class="material-icons" id="setalabel">arrow_forward_ios</span></p>
+            </label>
+        </form>
+    </main>
+    
+
+</body>
+</html>
